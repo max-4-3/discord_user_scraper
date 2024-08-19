@@ -1,11 +1,13 @@
-from asyncio import run, sleep
+from os import getcwd, path, system
+system("pip install fake-useragent aiohttp")
+
+from time import perf_counter
 from random import uniform
 from aiohttp import ClientSession
 from datetime import datetime
 from typing import Final
+from asyncio import run, sleep
 from fake_useragent import UserAgent
-from os import getcwd, path
-from time import perf_counter
 
 
 class DiscordScraper:
